@@ -1,11 +1,29 @@
 <%- include partials/header.ejs %>
 
-<h1><%= title %></h1>
-<p><%= message %></p>
-<ul>
-    <li>Email: Boshen.Yang@myGeorgian.ca</li>
-    <li>Phone#:7059702964</li>
-</ul>
+<div class="container text-center">
+    <h1><%= title %></h1>
+    <div class="center-block"><img src="/images/page5.jpg" alt="Unsplashed background img 1"></div>
+</div>
 
+<div class="container text-center">
+    <h2><%= message %></h2>
+    <div class="container">
+        <form action="/contactMe" method="post">
+            <p class="form_name">
+                <label for="yourname">Name:</label>
+                <input id="yourname" placeholder="Please type your name" name="name" required="" size="40" type="text">
+            </p>
+            <p class="form_email">
+                <label for="youremail">Email:</label>
+                <input id="youremail" placeholder="Please type your e-mail" name="email" required="" size="40" type="email">
+            </p>
+            <p class="form_textarea">
+                <label>What do you want to say?</label>
+                <textarea id="yourmessage" name="message" placeholder="What do you want to say to me?" required=""></textarea>
+            </p>
+            <p><input value="Submmit" class="lead-form-bottom-submit" type="submit"></p>
+        </form>
+    </div>
+</div>
 
 <%- include partials/footer.ejs %>

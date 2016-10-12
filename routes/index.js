@@ -15,6 +15,6 @@ router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'My project', message:'Projects List:'});
 });
 router.get('/contact_me', function(req, res, next) {
-  res.render('contact_me', { title: 'Contact Me', message:'Here my information.'});
+  res.render('contact_me', { title: 'Contact Me', message:'Please leave a message to me.'});
 });
 module.exports = router;
